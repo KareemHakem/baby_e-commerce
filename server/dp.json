@@ -1,0 +1,85 @@
+{
+  "product": [
+    {
+      "title": "laptop",
+      "description": "Microsoft Surface Laptop 3 PKH-00013 Laptop, Intel Core i5-1035G7, 13.5 Inch, 128GB SSD, 8GB RAM, Intel Iris Plus Graphics, Windows 10 Pro- Platinum",
+      "image": "https://media.btech.com/media/catalog/product/cache/8e279240a6612e9579d3be696bac1c07/m/i/microsoft_surface_laptop_surface_laptop_3_pkh-00013_image_1.jpg",
+      "price": "605",
+      "review": "Microsoft ",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "iphone 13 pro",
+      "description": "New Apple iPhone 13 Pro (128 GB) - Alpine Green All prices include VAT.Buy with installments and pay 120$ for 48 months with select banks",
+      "image": "https://m.media-amazon.com/images/I/61AwGDDZd3L._AC_SX679_.jpg",
+      "price": "1300",
+      "rate": "5",
+      "review": "the phone is soo good and the camera is big"
+    },
+    {
+      "id": 3,
+      "title": "iphone 13 pro max",
+      "description": "New Apple iPhone 13 Pro Max 128GB Sierra Blue All prices include VAT.Buy with installments and pay 130$ for 48 months with select banks",
+      "image": "https://m.media-amazon.com/images/I/61i8Vjb17SL._AC_SX679_.jpg",
+      "price": "2000",
+      "rate": "5",
+      "review": "the phone is soo good and so big"
+    },
+    {
+      "id": 4,
+      "title": "iphone 12 pro max",
+      "description": "New Apple iPhone 12 pro max with FaceTime (128GB) - Blue All prices include VAT.Buy with installments and pay 100$ for 48 months with select banks",
+      "image": "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_SX679_.jpg",
+      "price": "1250",
+      "rate": "5",
+      "review": "the phone is soo good"
+    },
+    {
+      "id": 5,
+      "title": "iphone 11 pro max",
+      "description": "New Apple iPhone 11 pro max with FaceTime (128GB) - Blue All prices include VAT.Buy with installments and pay 100$ for 48 months with select banks",
+      "image": "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_SX679_.jpg",
+      "price": "950",
+      "rate": "4",
+      "review": "the phone is good"
+    },
+    {
+      "title": "Apple iPad Pro",
+      "description": "Apple iPad Pro Tablet with FaceTime- 12.9-Inch Liquid Retina, 256GB, Wi-Fi + Cellular",
+      "image": "https://www.dubaiphone.net/web/image/product.product/963/image_1024/Apple%20iPad%20Pro%20Tablet%20with%20FaceTime-%2012.9-Inch%20Liquid%20Retina%2C%20256GB%2C%20Wi-Fi%20%2B%20Cellular%20%28Silver%29?unique=175fc49",
+      "price": "2000",
+      "id": 6
+    },
+    {
+      "title": "Galaxy S22 Ultra   ",
+      "description": "Samsung S22 Ultra 12GB Ram, 256GB - Burgundy",
+      "image": "https://www.eros.ae/media/catalog/product/cache/4d25cc2d7db4bdfe410479ebb1f61f20/s/2/s22ultra-black-03_1.jpg",
+      "price": "1800",
+      "id": 7
+    },
+    {
+      "title": "playstaPlaystation",
+      "description": "New Apple iPhone 11 pro max with FaceTime (128GB) - Blue All prices include VAT.Buy with installments and pay 100$ for 48 months with select banks",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rAsalRxHOaht-BopP36dHcixID9TiAKz9tpQcP1hIyguuPvsUL14gtxpb7P1k3fPDAg&usqp=CAU",
+      "price": "950",
+      "rate": "4",
+      "review": "the phone is good",
+      "id": 8
+    },
+    {
+      "title": "MacBook Air M2 chip  ",
+      "description": "The breathtaking 13.6-inch Liquid Retina display is the biggest — and brightest — ever on MacBook Air, with support for 1 billion colors. Text is supercrisp, and photos and movies more brilliant and vivid, with rich contrast and sharp detail.",
+      "image": "https://www.apple.com/mideast/macbook-air-m2/b/images/sa/battery_hw_midnight__ctl0mn014k2u_large.jpg",
+      "price": "1190",
+      "id": 9
+    },
+    {
+      "title": "Apple Watch Series 7",
+      "description": "image.alt.mkuq3_vw_pf+watch",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171067000%2C1631661671000",
+      "price": "700",
+      "id": 10
+    }
+  ]
+}

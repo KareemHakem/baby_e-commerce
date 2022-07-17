@@ -1,0 +1,15 @@
+.create-product-inputs-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 400px;
+  margin-top: 50px;
+}
+
+.create-product-inputs-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
