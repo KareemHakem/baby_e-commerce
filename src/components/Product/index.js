@@ -1,8 +1,22 @@
-import { Button } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { StarRating } from "../Rate";
+import { Button } from "../../commons/Button";
 import "./style.css";
 
-export default function Product({ data, handleEditNavigation }) {
+import { useDispatch } from "react-redux";
+import { deleteProduct } from "../../redux/deleteProduct/action";
+
+export default function Product({
+  data,
+  handleEditNavigation,
+  handleDeleteProduct,
+  deleteLoading,
+  id,
+  rating,
+}) {
+  const dispatch = useDispatch();
+  const navigation = useNavigate();
   return (
     <div style={{ minHeight: 900 }}>
       <div className="product-detail-container">
@@ -20,18 +34,31 @@ export default function Product({ data, handleEditNavigation }) {
               {data.price}
               <p style={{ color: "#00aaf0", fontSize: 18, marginLeft: 3 }}>$</p>
             </h3>
-            <h3 className="product-detail-rating">
+            {/* <h3 className="product-detail-rating">
               <h3>Rate :</h3> <p> {data.rate} </p>
-            </h3>
+            </h3> */}
+            <div style={{ marginLeft: 30, marginTop: 8 }}>
+              <StarRating />
+              <h3>{rating}</h3>
+            </div>
           </div>
           <p className="product-detail-description">{data.description}</p>
-          <Button
-          className="btn"
-            sx={{ marginTop: 10, backgroundColor: "#00aaf0", color: "#000" }}
-            onClick={handleEditNavigation}
-          >
-            Edit Product
-          </Button>
+          <div className="product-btn">
+            <Button
+              title="Edit Product"
+              onClick={handleEditNavigation}
+              width={50}
+              style={{ marginTop: 20, fontSize: 15 }}
+            />
+            <Button
+              title="Delete Product"
+              type="submit"
+              loading={deleteLoading}
+              onClick={() => dispatch(deleteProduct(id), navigation(`/`))}
+              width={50}
+              style={{ marginTop: 20, fontSize: 15 }}
+            />
+          </div>
         </div>
       </div>
       <div className="review-container">

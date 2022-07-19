@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
+import { deleteProduct } from "../../redux/deleteProduct/action";
 import { getProductId } from "../../redux/productId/action";
 
 import Product from "../../components/Product";
@@ -10,25 +11,27 @@ import Loading from "../../commons/Loading";
 
 export default function ProductDetail() {
   const { loading, data, error } = useSelector((state) => state.productId);
+  const { deleteLoading } = useSelector((state) => state.deleteProduct);
   const dispatch = useDispatch();
-  const navigation = useNavigate();
-  const { id } = useParams();
 
-  // console.log(data.id);
+  const { id } = useParams();
 
   useEffect(() => {
     dispatch(getProductId(id));
   }, [dispatch, id]);
 
-  const handleEditNavigation = () => {
-    navigation(`/product/edit/${id}`);
-  };
+  const handleDeleteProduct = (id) => dispatch(deleteProduct(id));
 
   if (loading) return <Loading />;
   if (error) return <Error />;
   return (
     <div>
-      <Product data={data} handleEditNavigation={handleEditNavigation} />
+      <Product
+        data={data}
+        handleDeleteProduct={handleDeleteProduct}
+        deleteLoading={deleteLoading}
+        id={id}
+      />
     </div>
   );
 }

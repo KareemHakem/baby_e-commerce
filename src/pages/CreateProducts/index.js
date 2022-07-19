@@ -14,7 +14,7 @@ export default function CreateProducts() {
 
   const handleCreateProductSubmit = (value) => {
     dispatch(CreateProduct(value));
-    navigation(`/product`);
+    navigation(`/`);
   };
 
   return (
