@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server -p 3006 -w dp.json"
+    "start": "json-server -p 3006 -w dp.json",
+    "test": "(eslint lib || true) && jest"
   },
   "keywords": [],
   "author": "",

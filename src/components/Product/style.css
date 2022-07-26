@@ -64,40 +64,30 @@
   margin-top: 30px;
 }
 
-.review-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 50px;
-}
-
-.review-container h1 {
-  color: #00aaf0;
-  font-family: "Roboto", sans-serif;
-}
-
-.review-product-card {
-  height: 70px;
-  width: 500px;
-  border-radius: 10px;
-  margin-top: 50px;
-  box-shadow: rgba(100, 100, 111, 0.254) 0px 7px 29px 0px;
-  border: 1.5px solid #00aaf0;
-}
-
-.review-product-card h2 {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
 .product-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 1050px) {
+.add-review-to-product-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-review {
+  margin-top: 30px;
+}
+
+.input-review h2 {
+  color: #00aaf0;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1047px) {
   .product-detail-container {
     display: flex;
     justify-content: center;
@@ -111,23 +101,9 @@
     height: 440px;
     width: 300px;
   }
-
-  .review-container {
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-top: 50px;
-  }
 }
 
-@media screen and (max-width: 590px) {
-  .product-btn {
-    flex-direction: column;
-    margin-top: -100px;
-  }
-}
-
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 684px) {
   .product-detail-right-side {
     justify-content: center;
     align-items: center;
@@ -144,22 +120,21 @@
     height: 250px;
     width: 230px;
     border-radius: 10px;
-    margin-right: 90px;
+    margin-right: 10px;
     margin-bottom: -60px;
   }
 
-  .review-container {
-    margin-right: 90px;
+  .product-btn {
+    margin-top: -150px !important ;
   }
+}
 
-  .review-product-card {
-    height: 70px;
-    width: 300px;
-    margin-top: 50px;
-    margin-left: 20px;
+@media screen and (max-width: 585px) {
+  .product-btn {
+    flex-direction: column;
+    margin-top: -100px;
   }
+}
 
-  .btn {
-    margin-top: -100px !important ;
-  }
+@media screen and (max-width: 500px) {
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
@@ -7,64 +7,52 @@ import { getProducts } from "../../redux/product/action";
 import CardItems from "../../components/CardItems";
 import Loading from "../../commons/Loading";
 import Error from "../../commons/Error";
-import ReactPaginate from "react-paginate";
+
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import "./style.css";
+import { number } from "yup";
 
 export default function Products() {
   const { loading, data, error } = useSelector((state) => state.product);
-
-  console.log(data?.length, "length");
   const [search, setSearch] = useState("");
-  const [pageNumber, setPageNumber] = useState(0);
-  const [limit] = useState(15);
+  const [pageNumber, setPageNumber] = useState(1);
   const navigation = useNavigate();
   const dispatch = useDispatch();
+
+  console.log(data.length, "dataaaaaaa");
 
   useEffect(() => {
     dispatch(
       getProducts(
         search?.length > 1 ? search?.trim().toLocaleLowerCase() : "",
-        pageNumber,
-        limit
+        pageNumber
       )
     );
-  }, [dispatch, search, pageNumber, limit]);
+  }, [dispatch, search, pageNumber]);
 
   const handleNavigationDetailPage = (id) => {
     navigation(`/product/${id}`);
   };
 
-  const handlePageClick = ({ selected: selectedPage }) => {
-    setPageNumber(selectedPage);
+  const handlePreviousPageClick = () => {
+    setPageNumber(Number(pageNumber) - 1);
+    window.scroll({
+      top: document.body.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
-  const offset = pageNumber * limit;
-
-  console.log(offset, "offset");
-
-  const CardBooksView = () => {
-    return useMemo(
-      () =>
-        data
-          ?.slice(offset, offset + limit)
-          .map((products) => (
-            <CardItems
-              setSearch={setSearch}
-              search={search}
-              key={products.id}
-              handleNavigate={handleNavigationDetailPage}
-              product={products}
-            />
-          )),
-      [search, pageNumber, limit, offset]
-    );
+  const handleNextPageClick = () => {
+    setPageNumber(Number(pageNumber) + 1);
+    window.scroll({
+      top: document.body.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
-
-  const pageCount = Math.ceil(data?.length / limit);
-
-  console.log(pageCount, "pageCount");
-  console.log(data?.length, "data");
 
   if (loading) return <Loading />;
   if (error) return <Error />;
@@ -94,19 +82,34 @@ export default function Products() {
           marginTop: 80,
         }}
       >
-        <CardBooksView />
+        {data.map((products) => (
+          <CardItems
+            setSearch={setSearch}
+            search={search}
+            key={products.id}
+            handleNavigate={handleNavigationDetailPage}
+            product={products}
+          />
+        ))}
       </div>
-      <ReactPaginate
-        previousLabel={"<-"}
-        nextLabel={"->"}
-        pageCount={pageCount}
-        onPageChange={handlePageClick}
-        containerClassName={"paginatePage"}
-        previousLinkClassName={"pagination__link"}
-        nextLinkClassName={"pagination__link"}
-        disabledClassName={"pagination__link--disabled"}
-        activeClassName={"pagination__link--active"}
-      />
+      <div className="paginatePage">
+        <div
+          className="paginateNextAndPreviousPage"
+          onClick={handlePreviousPageClick}
+        >
+          {<ArrowLeftIcon />}
+        </div>
+
+        <h3 style={{ marginTop: 15 }}>{pageNumber}</h3>
+        {data.length !== 0 ? (
+          <div
+            className="paginateNextAndPreviousPage"
+            onClick={handleNextPageClick}
+          >
+            {<ArrowRightIcon />}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }
