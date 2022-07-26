@@ -12,7 +12,7 @@ import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import "./style.css";
-import { number } from "yup";
+
 
 export default function Products() {
   const { loading, data, error } = useSelector((state) => state.product);
@@ -20,8 +20,6 @@ export default function Products() {
   const [pageNumber, setPageNumber] = useState(1);
   const navigation = useNavigate();
   const dispatch = useDispatch();
-
-  console.log(data.length, "dataaaaaaa");
 
   useEffect(() => {
     dispatch(

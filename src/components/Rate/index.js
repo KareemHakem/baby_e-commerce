@@ -10,15 +10,10 @@ export default function StarRating({
   data,
 }) {
   const valueRate = data.filter((item) => item.productId === Number(id));
-  console.log(valueRate, "valueRate");
-
   const sum = valueRate.reduce((accumulator, object) => {
     return accumulator + object.rate / valueRate.length;
   }, 0);
 
-  console.log(value);
-
-  console.log(sum, "sum");
   return (
     <Box style={{ marginTop: 5 }} className="rate-container">
       <Rating
