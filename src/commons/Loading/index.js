@@ -1,18 +1,10 @@
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import "./style.css";
 
 export default function Loading() {
   return (
-    <Box
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: 200,
-        color: "red",
-        fontFamily: "Roboto sans-serif",
-      }}
-    >
+    <Box className="loading-commons">
       <CircularProgress />
     </Box>
   );

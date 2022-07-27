@@ -43,11 +43,11 @@
       "price": "700"
     },
     {
-      "id": 7,
       "title": "Galaxy S22 Ultra   ",
       "description": "Samsung S22 Ultra 12GB Ram, 256GB - Burgundy",
       "image": "https://www.eros.ae/media/catalog/product/cache/4d25cc2d7db4bdfe410479ebb1f61f20/s/2/s22ultra-black-03_1.jpg",
-      "price": "1800"
+      "price": "1200",
+      "id": 7
     },
     {
       "id": 8,
@@ -120,11 +120,11 @@
       "price": "1800"
     },
     {
-      "id": 18,
       "title": "playstaPlaystation",
       "description": "New Apple iPhone 11 pro max with FaceTime (128GB) - Blue All prices include VAT.Buy with installments and pay 100$ for 48 months with select banks",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rAsalRxHOaht-BopP36dHcixID9TiAKz9tpQcP1hIyguuPvsUL14gtxpb7P1k3fPDAg&usqp=CAU",
-      "price": "950"
+      "price": "950",
+      "id": 18
     },
     {
       "id": 19,
@@ -318,6 +318,85 @@
       "review": "ipad is nice",
       "productId": "16",
       "id": 35
+    },
+    {
+      "review": "so good",
+      "productId": "7",
+      "id": 36
+    },
+    {
+      "review": "nice mobile ",
+      "productId": "7",
+      "id": 37
+    },
+    {
+      "review": "good",
+      "productId": "7",
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "review": "good",
+      "productId": "7",
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "review": "good",
+      "productId": "7",
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "review": "good",
+      "productId": "7",
+      "id": 44
+    },
+    {
+      "review": "good",
+      "productId": "7",
+      "id": 45
+    },
+    {
+      "review": "",
+      "productId": "2",
+      "id": 46
+    },
+    {
+      "review": "good",
+      "productId": "2",
+      "id": 47
+    },
+    {
+      "review": "good",
+      "productId": "2",
+      "id": 48
+    },
+    {
+      "review": "good",
+      "productId": "2",
+      "id": 49
+    },
+    {
+      "review": "nice",
+      "productId": "2",
+      "id": 50
+    },
+    {
+      "review": "good",
+      "productId": "18",
+      "id": 51
+    },
+    {
+      "review": "good",
+      "productId": "18",
+      "id": 52
     }
   ],
   "rate": [
@@ -1020,6 +1099,11 @@
       "rate": 3,
       "productId": 3,
       "id": 140
+    },
+    {
+      "rate": 5,
+      "productId": 7,
+      "id": 141
     }
   ]
 }

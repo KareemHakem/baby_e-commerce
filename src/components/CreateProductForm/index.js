@@ -9,6 +9,7 @@ import "./style.css";
 
 export default function CreateProductForm({
   handleCreateProductSubmit,
+  //   handleChangeValue,
   loading,
 }) {
   return (
@@ -34,6 +35,7 @@ export default function CreateProductForm({
             <FormInput
               name="image"
               label="Image"
+              // onChange={handleChangeValue}
               placeholder="Image"
               width={330}
             />

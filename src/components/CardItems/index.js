@@ -14,9 +14,6 @@ export default function CardItems({ product, handleNavigate }) {
           {product.price}
           <p style={{ color: "#00aaf0", fontSize: 18, marginLeft: 3 }}>$</p>
         </h3>
-        <h3 className="product-rating">
-          <h3>rate</h3> : <p>{product.rate}</p>
-        </h3>
       </div>
       <p className="product-description">{product.description}</p>
     </div>

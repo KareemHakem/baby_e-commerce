@@ -1,0 +1,10 @@
+.loading-commons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  color: #00aaf0;
+  font-family: "Roboto", sans-serif;
+  width: 20px;
+  height: 20px;
+}

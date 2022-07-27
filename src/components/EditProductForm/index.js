@@ -23,7 +23,7 @@ export default function EditProductForm({
       validationSchema={validationSchema}
       onSubmit={handleEditProductSubmit}
     >
-      {({ isValid, dirty }) => (
+      {({ isValid, dirty, disabled }) => (
         <div>
           <Form className="edit-product-inputs-form-container">
             <div className="edit-product-inputs-form">
@@ -55,7 +55,7 @@ export default function EditProductForm({
             <Button
               title="Edit"
               type="submit"
-              disabled={!dirty || !isValid}
+              disabled={!dirty || !isValid || disabled}
               loading={loading}
               width={100}
               style={{ marginTop: 20 }}

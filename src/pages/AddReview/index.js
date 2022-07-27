@@ -31,8 +31,8 @@ export default function AddReview() {
         dispatch(getReviews());
       })
     );
-  };
-
+  }; 
+ 
   if (loadingReview) return <Loading />;
   if (error) return <Error />;
 

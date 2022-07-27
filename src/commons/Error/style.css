@@ -1,0 +1,9 @@
+.error-commons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
