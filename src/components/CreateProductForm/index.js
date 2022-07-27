@@ -4,6 +4,7 @@ import { validationEditSchema as validationSchema } from "../../utils/validation
 
 import { FormInput } from "../../commons/FormInput";
 import { Button } from "../../commons/Button";
+import Image from "../../assets/images/photo.png";
 
 import "./style.css";
 
@@ -17,7 +18,7 @@ export default function CreateProductForm({
       initialValues={{
         title: "",
         description: "",
-        image: "",
+        image: "" || Image,
         price: "",
       }}
       validationSchema={validationSchema}
