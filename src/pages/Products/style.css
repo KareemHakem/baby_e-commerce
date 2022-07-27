@@ -11,6 +11,25 @@
   color: plack;
 }
 
+.input-search-home {
+  border: none;
+  width: 250px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.card-product-home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.pagination-number-page {
+  margin-top: 15px;
+}
+
 .pagination__link {
   font-weight: bold;
 }

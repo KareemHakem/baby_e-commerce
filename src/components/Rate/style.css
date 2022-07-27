@@ -2,4 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
+}
+
+.rate-number {
+  margin-left: 10px;
 }

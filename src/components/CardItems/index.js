@@ -12,7 +12,7 @@ export default function CardItems({ product, handleNavigate }) {
       <div className="card-price-rating-side">
         <h3 className="card-product-price">
           {product.price}
-          <p style={{ color: "#00aaf0", fontSize: 18, marginLeft: 3 }}>$</p>
+          <p className="price-logo">$</p>
         </h3>
       </div>
       <p className="product-description">{product.description}</p>

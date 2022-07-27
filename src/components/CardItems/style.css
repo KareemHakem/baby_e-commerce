@@ -42,6 +42,12 @@
   margin-top: 7px;
 }
 
+.price-logo {
+  color: #00aaf0;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
 .product-rating p {
   color: gold;
   margin-top: 5px;

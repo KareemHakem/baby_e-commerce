@@ -265,16 +265,6 @@
       "id": 23
     },
     {
-      "review": "the is so expensive ",
-      "productId": "2",
-      "id": 24
-    },
-    {
-      "review": "the is so expensive ",
-      "productId": "2",
-      "id": 25
-    },
-    {
       "review": "the phone is good",
       "productId": "1",
       "id": 26
@@ -335,9 +325,6 @@
       "id": 38
     },
     {
-      "id": 39
-    },
-    {
       "review": "good",
       "productId": "7",
       "id": 40
@@ -363,26 +350,7 @@
       "productId": "7",
       "id": 45
     },
-    {
-      "review": "",
-      "productId": "2",
-      "id": 46
-    },
-    {
-      "review": "good",
-      "productId": "2",
-      "id": 47
-    },
-    {
-      "review": "good",
-      "productId": "2",
-      "id": 48
-    },
-    {
-      "review": "good",
-      "productId": "2",
-      "id": 49
-    },
+
     {
       "review": "nice",
       "productId": "2",

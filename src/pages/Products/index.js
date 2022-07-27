@@ -13,7 +13,6 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import "./style.css";
 
-
 export default function Products() {
   const { loading, data, error } = useSelector((state) => state.product);
   const [search, setSearch] = useState("");
@@ -59,27 +58,14 @@ export default function Products() {
     <div className="flex">
       <div className="input-search-bar">
         <input
-          style={{
-            border: "none",
-            width: 250,
-            marginLeft: 10,
-            outline: "none",
-          }}
+          className="input-search-home"
           placeholder="search for Product"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexWrap: "wrap",
-          marginTop: 80,
-        }}
-      >
+      <div className="card-product-home-page">
         {data.map((products) => (
           <CardItems
             setSearch={setSearch}
@@ -98,7 +84,7 @@ export default function Products() {
           {<ArrowLeftIcon />}
         </div>
 
-        <h3 style={{ marginTop: 15 }}>{pageNumber}</h3>
+        <h3 className="pagination-number-page">{pageNumber}</h3>
         {data.length !== 0 ? (
           <div
             className="paginateNextAndPreviousPage"

@@ -27,9 +27,9 @@ export default function Product({ data, deleteLoading, id, AddReview }) {
           <div className="price-rating-detail-right-side">
             <h3 className="product-price">
               {data.price}
-              <p style={{ color: "#00aaf0", fontSize: 18, marginLeft: 3 }}>$</p>
+              <p className="price-logo">$</p>
             </h3>
-            <div style={{ marginLeft: 30, marginTop: 8 }}>
+            <div className="rate-components">
               <AddRate id={id} />
             </div>
           </div>

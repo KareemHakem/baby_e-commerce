@@ -15,7 +15,7 @@ export default function StarRating({
   }, 0);
 
   return (
-    <Box style={{ marginTop: 5 }} className="rate-container">
+    <Box className="rate-container">
       <Rating
         name="simple-controlled"
         value={value}
@@ -24,7 +24,7 @@ export default function StarRating({
           handleClickRate(e.target.value);
         }}
       />
-      <h3 style={{ marginLeft: 10 }}>{sum.toFixed()}</h3>
+      <h3 className="rate-number">{sum.toFixed()}</h3>
     </Box>
   );
 }

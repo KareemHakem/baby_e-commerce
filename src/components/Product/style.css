@@ -26,13 +26,21 @@
   margin-left: 50px;
 }
 
+.price-logo {
+  color: #00aaf0;
+  font-size: 18px;
+  margin-left: 3px;
+}
 .price-rating-detail-right-side {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin-top: 30px;
 }
-
+.rate-components {
+  margin-top: 8px;
+  margin-left: 30px;
+}
 .product-price {
   display: flex;
   justify-content: center;
